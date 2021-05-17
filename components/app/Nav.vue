@@ -13,7 +13,17 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { mdiHomeOutline, mdiWrenchOutline } from '@mdi/js'
+import {
+  mdiAccountBoxOutline,
+  mdiApplicationCog,
+  mdiEmailOutline,
+  mdiHomeOutline,
+  mdiLanguageTypescript,
+  mdiLockOutline,
+  mdiLoginVariant,
+  mdiMonitorDashboard,
+  mdiWrenchOutline
+} from '@mdi/js'
 
 export default Vue.extend({
   name: 'AppNav',
@@ -21,6 +31,13 @@ export default Vue.extend({
     return {
       links: [
         { to: '/', icon: mdiHomeOutline, text: 'Home' },
+        { to: '/login', icon: mdiLoginVariant, text: 'Login' },
+        { to: '/profile', icon: mdiAccountBoxOutline, text: 'Profile' },
+        { to: '/email', icon: mdiEmailOutline, text: 'Email' },
+        { to: '/security', icon: mdiLockOutline, text: 'Account security' },
+        { to: '/app', icon: mdiApplicationCog, text: 'Installed Apps' },
+        { to: '/dev', icon: mdiLanguageTypescript, text: 'Developer Console' },
+        { to: '/admin', icon: mdiMonitorDashboard, text: 'Admin Dashboard' },
         { to: '/build', icon: mdiWrenchOutline, text: 'Build Info' }
       ]
     }

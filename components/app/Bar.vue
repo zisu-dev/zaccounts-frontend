@@ -8,16 +8,9 @@
       href="/"
       @click.stop.prevent="$router.push('/')"
     >
-      <code>SITE TITLE</code>
+      <code>ZAccounts</code>
     </v-btn>
     <v-spacer />
-    <v-btn
-      icon
-      href="https://github.com/ztemplates/nuxt-vuetify-enhanced"
-      target="_blank"
-    >
-      <v-icon>{{ mdiGithub }}</v-icon>
-    </v-btn>
     <v-btn icon aria-label="settings" @click="settings = !settings">
       <v-icon>{{ mdiCog }}</v-icon>
     </v-btn>
